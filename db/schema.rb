@@ -13,10 +13,11 @@
 
 ActiveRecord::Schema.define(version: 20140323204441) do
 
-  create_table "documents_tables", force: true do |t|
+  create_table "documents", force: true do |t|
     t.string   "file"
     t.string   "category"
-    t.string   "version"
+    t.string   "content_type"
+    t.integer  "size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

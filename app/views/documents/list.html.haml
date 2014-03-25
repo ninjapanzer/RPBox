@@ -1,0 +1,5 @@
+%ul
+  - @documents.each do |d|
+    %li
+      %a{href: d.file.url, target:'_blank'}
+        %span= d.file.path.split("/").last
